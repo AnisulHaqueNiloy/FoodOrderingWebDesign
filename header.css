@@ -1,0 +1,140 @@
+.navheadercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.headertext{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.headertext p{
+    font-size: 18px;
+    transition: .3s ease-in;
+}
+
+.headertext p:hover{
+    color: orange;
+    cursor: pointer;
+
+}
+.headertext p.active {
+    color: orange;
+}
+
+
+.headersearch{
+    height: 40px;
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(202, 202, 202);
+    display: flex;
+    justify-content: space-between;
+    border: .5px solid rgb(158, 156, 156);
+    
+}
+
+
+
+.search{
+    width: 80%;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border-right: 1px solid rgb(141, 141, 141);
+    
+    
+}
+.search input{
+    width: 80px;
+    border: none;    
+}
+
+
+.search p{
+    background: transparent;
+    font-size: 12px;
+}
+
+.search i{
+    background: transparent;
+    
+}
+
+
+.cart{
+    
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.amount{
+    height: 8px;
+    width: 8px;
+   
+    position: absolute;
+    font-size: 7px;
+    border-radius: 50%;
+    background: orange;
+    right: 0px;
+    top: 2.5px;
+    box-shadow: 0px 0px 1px 2px rgb(233, 189, 107);
+    
+    
+}
+.amount p{
+
+    text-align: center;
+    
+    
+    
+}
+.headerlogo img{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 720px) 
+    {
+    .navheadercontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .headersearch{
+        height: 30px;
+        width: 150px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px rgb(202, 202, 202);
+        display: flex;
+        justify-content: space-between;
+        border: .5px solid rgb(158, 156, 156);
+        
+    }
+
+    .cart{
+        align-items: center;
+        margin-top: 4px;
+        margin-right: 10px;
+        margin-bottom: 4px;
+        position: relative;
+    }
+  
+  }

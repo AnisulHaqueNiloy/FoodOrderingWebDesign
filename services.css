@@ -1,0 +1,320 @@
+.service-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.card-services{
+    width:33.33% ;
+    padding: 60px;
+    box-shadow: 0px 0px 2px 2px rgb(236, 235, 235);
+    border-radius: 18px;
+    text-align: center;
+}
+.card-services .icon{
+    font-size: 60px;
+    color: orange;
+    
+
+}
+
+
+.card-services h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.card-services p{
+    margin: 20px 0px;
+    font-size: 12px
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-left{
+    width:  800px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgb(221, 218, 218);
+
+
+}
+
+.profilecontainer{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.profilecontainer img{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.profiledesc{
+    padding-top: 10px;
+    padding: 40px;
+}
+
+.testimonial-right img{
+    height: 400px;
+    width: 600px;
+}
+
+
+.righticon {
+        position: absolute;
+        font-size: 40px;
+        
+        right: 53.6%;
+    }
+    
+
+
+
+    .lefticon {
+        position: absolute;
+        font-size: 40px;
+        left: 40px;
+    }
+
+
+    .lastbody{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border-radius: 18px;
+        height: 380px;
+        width: 100%;
+        background: black;
+    }
+
+    .imagebody img{
+        margin-left: 100px;
+        width: 370px;
+        height: 370px;
+    }
+
+    .imagebody{
+        width: 50%;
+    }
+
+    .lastbody{
+        display: flex;
+        gap: 150px;
+        margin-top: 20px;
+        justify-content: space-between;
+        
+    }
+
+    .newslater{
+        margin-top: 60px;
+        width: 50%;
+    }
+
+    .newslater h2{
+        color: white;
+        font-weight: 600;
+    }
+
+    .newslater p{
+        color: white;
+        font-size: 12px;
+    }
+
+
+    .newslater input{
+        margin-top: 20px;
+        color: black;
+        height: 40px;
+        border-radius: 20px;
+        
+    }
+
+    .newslater button{
+        width: 80px;
+        background: orange;
+        height: 40px;
+        font-weight: 500;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .toast {
+        background-color: rgba(241, 237, 237, 0.8); /* Semi-transparent black background */
+        color: rgb(0, 0, 0); /* Text color */
+        padding: 10px 20px; /* Padding */
+        border-radius: 5px; /* Rounded corners */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* 20px from the bottom */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        z-index: 9999; /* Ensure it's on top of other elements */
+        display: none; /* Initially hidden */
+    }
+    
+    /* Optional animation */
+    @keyframes slideIn {
+        from {
+            bottom: -50px; /* Start from off-screen */
+        }
+        to {
+            bottom: 20px; /* Slide in to 20px from the bottom */
+        }
+    }
+    .toast.show {
+        animation: slideIn 0.5s ease forwards; /* Apply animation */
+    }
+
+@media only screen and (min-width: 300px) and (max-width: 720px) {
+.service-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 60px;
+    align-items: center;
+    flex-direction: column;
+}
+.card-services {
+    width: 100%;
+    padding: 60px;
+    box-shadow: 0px 0px 2px 2px rgb(236, 235, 235);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.testimonial-left {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgb(221, 218, 218);
+}
+
+.testimonial-right img {
+    height: 400px;
+    /* width: 600px; */
+    width: 100%;
+}
+
+.righticon {
+    position: absolute;
+    font-size: 40px;
+    /* right: 900px; */
+    top: 8200px;
+    left: 360px;
+    display: none;
+}
+
+.lefticon {
+    position: absolute;
+    font-size: 40px;
+    left: 2px;
+    top: 8200px;
+    display: none;
+}
+
+.righticon {
+    position: absolute;
+    font-size: 40px;
+    /* right: 900px; */
+    top: 8200px;
+    left: 360px;
+    display: none;
+}
+
+.lastbody {
+    display: flex;
+    gap: 150px;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+}
+
+.imagebody img {
+    /* margin-left: 100px; */
+    width: 100%;
+    height: 300px;
+}
+
+
+.newslater {
+    margin-top: 60px;
+    width: 100%;
+}
+
+
+
+
+.newslater {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.toast {
+    background-color: rgba(241, 237, 237, 0.8); /* Semi-transparent black background */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 5px 5px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 9999; /* Ensure it's on top of other elements */
+    display: none; /* Initially hidden */
+}
+
+/* Optional animation */
+@keyframes slideIn {
+    from {
+        bottom: -50px; /* Start from off-screen */
+    }
+    to {
+        bottom: 20px; /* Slide in to 20px from the bottom */
+    }
+}
+.toast.show {
+    animation: slideIn 0.5s ease forwards; /* Apply animation */
+}
+
+
+}
